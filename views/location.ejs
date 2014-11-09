@@ -10,15 +10,11 @@
     </script>
     <style>
 body { background:#fff;}
-#map-canvas
+#map-canvas, #map2-canvas
 {
-position:absolute;
-width:800px;
-height:600px;
-z-index:15;
-top:85%;
-left:50%;
-margin:-400px 0 0 -400px;
+width:400px;
+height:400px;
+
 }
 </style>
   </head>
@@ -59,6 +55,12 @@ margin:-400px 0 0 -400px;
   </div>
 </div>
 </header>
+<div class="container">
+  <h2 style="text-align:center;"> Locations </h2><br/>
+<div id="map-canvas" style="float:left"></div>
+<div id="map2-canvas" style="float:right"></div>
+</div>
+<br/>
   <footer>
       <div class="footer">
        <div class="container">
@@ -90,50 +92,31 @@ window.setTimeout(function() {
 map.panTo(mkr.getPosition());
 }, 3000);
 });
-var places = [];
-places.push(new google.maps.LatLng(37.337186,-121.881493));
-places.push(new google.maps.LatLng(37.335462,-121.884969));
-places.push(new google.maps.LatLng(37.334268,-121.883982));
-// Looping through the places array
-var events = [];
-events.push("Engineering Department Coding Battle");
-events.push("MLK Book Exhibition");
-events.push("Science of Spartans Quiz");
-var people= [];
-people.push(new google.maps.LatLng(37.336186,-121.883493));
-people.push(new google.maps.LatLng(37.332462,-121.885969));
-people.push(new google.maps.LatLng(37.336268,-121.887982));
-for (var i = 0; i < places.length; i++) {
-// Adding the marker as usual
-var marker = new google.maps.Marker({
-position: places[i],
-map: map,
-animation: google.maps.Animation.BOUNCE,
-title: 'Location ' + i
+
+
+// Map 2
+var options2 = {
+zoom: 16,
+center: new google.maps.LatLng(37.331686, -122.030733),
+mapTypeId: google.maps.MapTypeId.ROADMAP
+};
+// Creating the map
+var map2 = new google.maps.Map(document.getElementById('map2-canvas'), options2);
+var mkr2 = new google.maps.Marker({
+position: map2.getCenter(),
+map: map2,
+title: 'Click to zoom'
 });
-// Wrapping the event listener inside an anonymous function
-// that we immediately invoke and passes the variable i to.
-(function(i, marker) {
-// Creating the event listener. It now has access to the values of
-// i and marker as they were during its creation
-google.maps.event.addListener(marker, 'click', function() {
-var infowindow = new google.maps.InfoWindow({
-content: 'Event: ' + events[i]
+google.maps.event.addListener(map2, 'center_changed', function() {
+// 3 seconds after the center of the map has changed, pan back to the
+// marker.
+window.setTimeout(function() {
+map2.panTo(mkr2.getPosition());
+}, 3000);
 });
-infowindow.open(map, marker);
-});
-})(i, marker);
-}
-for (var i = 0; i < people.length; i++) {
-// Adding the marker as usual
-var ppl = new google.maps.Marker({
-position: people[i],
-map: map,
-title: 'Person ' + i,
-//icon: 'person.gif',
-animation: google.maps.Animation.DROP
-});
-}
+
+
+
 }
 })();
 </script>
