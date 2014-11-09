@@ -24,10 +24,15 @@
 
 }
 
+.container .bigdata-video{
+	margin: 0 24%;
+}
+
+
 .footer {
-  position: absolute;
-  margin-bottom: 0;
-  padding: 15px;
+  padding:15px;
+  position: fixed;
+  bottom: 0;
   width: 100%;
   /* Set the fixed height of the footer here */
   height: 50px;

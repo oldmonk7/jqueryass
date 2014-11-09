@@ -46,13 +46,77 @@
 </div>
 </header>
   
-    <h1> Big Data</h1></br>
-    <video width="320" height="240" controls>
-      <source src="video/bigdata.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
+  </br>
+  <div class="container content1">
+    <div class="row">
+      <div class="col-lg-2">
+      <br/>
+      <br/>
+      <br/>
+      <div class="list-group">
+            <a href="#" class="list-group-item">Brochure</a>
+            <a href="#" class="list-group-item" data-toggle="modal" data-target="#myModal">White Paper</a>
+      </div>
+      </div>
+      <div class="col-lg-7">
+        <h2> Big Data</h2>
+        <p> Big data is an all-encompassing term for any collection of data sets so large and complex that it becomes difficult to process using traditional data processing applications.
+        The challenges include analysis, capture, curation, search, sharing, storage, transfer, visualization, and privacy violations. The trend to larger data sets is due to the additional information derivable from analysis of a single large set of related data, as compared to separate smaller sets with the same total amount of data, allowing correlations to be found to "spot business trends, prevent diseases, combat crime and so on." </p>
+        
+        <div class="bigdata-video">
+          <video width="320" height="240" controls>
+            <source src="video/bigdata.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+      <div class="col-lg-3">
+        <div class="sidebar-block">
+          <div class="sidebar-testimonials">
+          <blockquote>I have been a long time blog follower and Pulp Fiction always brings out the best of all.</br> <span style="float:right">-Reader</span></blockquote>
+          </div>
+          </div>
+          <div class="sidebar-block">
+          <div class="sidebar-testimonials">
+           <blockquote>I have been a long time blog follower and Pulp Fiction always brings out the best of all.</br> <span style="float:right">-Reader</span></blockquote>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> 
+  
 
-
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+          <h4 class="modal-title" id="myModalLabel">Download White Paper</h4>
+        </div>
+        <div class="modal-body">
+            <form role="form">
+              <div class="form-group">
+            <label for="exampleInputEmail1">First Name</label>
+            <input type="name" class="form-control" id="fname" placeholder="">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Last Name</label>
+            <input type="email" class="form-control" id="lname" placeholder="">
+          </div>    
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="">
+          </div>
+        </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <a href="docs/iotpaper.pdf" download="IoT-White-Paper.pdf" id="downlaod" class="btn btn-primary">Download</a>
+        </div>
+      </div>
+    </div>
+  </div>
+   
     <footer>
       <div class="footer">
        <div class="container">
@@ -61,4 +125,7 @@
       </div>
     </footer>
   </body>
+  
+   
+    
 </html>
