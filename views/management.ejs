@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/bootstrap.min.css' />
+    <link rel='stylesheet' href='/stylesheets/carousal.css' />
+    <link rel='stylesheet' href='/stylesheets/pages.css' />
+
+    <style>
+      /* TODO move */
+      h1 { text-align: center;}
+      div img.img-thumbnail { display:block;  }
+      div img.img-thumbnail.left { float:right;}
+      div img.img-thumbnail.middle { margin:auto; }
+      div img.img-thumbnail.right { float:left;}
+      div.modal-body img.profile { float:left; margin-right: 15px; margin-bottom: 15px;}
+    </style>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+  </head>
+ <body>
+  <header>
+  <div class="navbar navbar-inverse">
+  <div class="container">
+  <div class="navbar-header">
+    <a class="navbar-brand" href="/">Pulp Fiction</a>
+  </div>
+
+  <div class="navbar-collapse collapse navbar-inverse-collapse">
+    <form class="navbar-form navbar-left">
+      <input class="form-control col-lg-8" placeholder="Search" type="text">
+    </form>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="/">Home</a></li>
+      <li class="dropdown">
+        <a aria-expanded="false" href="#" class="dropdown-toggle" data-toggle="dropdown">Products <b class="caret"></b></a>
+        <ul class="dropdown-menu">
+          <li><a href="/mobile">Mobile</a></li>
+          <li><a href="/bigdata">Big Data</a></li>
+          <li><a href="/iot">IoT/IoE</a></li>
+        </ul>
+      </li>
+        <li class="dropdown">
+        <a aria-expanded="false" href="#" class="dropdown-toggle" data-toggle="dropdown">About Us <b class="caret"></b></a>
+        <ul class="dropdown-menu">
+          <li><a href="/management">Management</a></li>
+          <li><a href="/codeofconduct">Code of Conduct</a></li>
+          <li><a href="/businessprocess">Business Process</a></li>
+          <li><a href="/location">Locations</a></li>
+          <li><a href="/contacts">Contacts</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  </div>
+</div>
+</header>
+  
+  </br>
+
+  <div class="container content1">
+    <div class="row">
+      <div class="col-xs-12">
+        <h2>Management</h2>
+        <p> Visionary data scientists.  Accomplished industry veterans.  Trusted advisors.  Proven investors.  Pulp Fiction is led by a world-class team that believes in data’s potential to change the world. Our company is proud to be backed by Artiman Ventures, Sofinnova Ventures, Intel Capital, Investor Growth Capital (IGC), QuestMark Partners, Goldman Sachs, TransLink Capital and other strategic investors.
+        </p>
+      </div>
+    </div><!--row-->
+    <h1>Executive Team</h1>
+    <div class="row">
+      <div class="col-xs-4">
+        <img src="/images/execs/exec0.jpg" class="img-thumbnail left" data-toggle="modal" data-target="#modal0">
+      </div>
+      <div class="col-xs-4">
+        <img src="/images/execs/exec1.jpg" class="img-thumbnail middle" data-toggle="modal" data-target="#modal1">
+      </div>
+      <div class="col-xs-4">
+        <img src="/images/execs/exec2.jpg" class="img-thumbnail right" data-toggle="modal" data-target="#modal2">
+      </div>
+    </div><!--row-->
+    <div class="row">
+      <div class="col-xs-4">
+        <img src="/images/execs/exec3.jpg" class="img-thumbnail left" data-toggle="modal" data-target="#modal3">
+      </div>
+      <div class="col-xs-4">
+        <img src="/images/execs/exec4.jpg" class="img-thumbnail middle" data-toggle="modal" data-target="#modal4">
+      </div>
+      <div class="col-xs-4">
+        <img src="/images/execs/exec5.jpg" class="img-thumbnail right" data-toggle="modal" data-target="#modal5">
+      </div>
+    </div><!--row-->
+  </div><!--container-->
+  
+
+  <div class="modal fade" id="modal0" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+          <h4 class="modal-title" id="myModalLabel">Mia Wallace - Founder</h4>
+        </div>
+        <div class="modal-body">
+          <img src="/images/execs/exec0.jpg" class="profile">
+          Morbi odio turpis, bibendum ac risus in, rhoncus porta dolor. Aenean quis iaculis enim, bibendum porta lorem. Aliquam consectetur ligula eu tincidunt rhoncus. Aliquam sodales volutpat arcu a finibus. Proin lobortis nibh vitae tortor tincidunt tristique. Nunc mattis diam sit amet suscipit elementum. Aliquam volutpat, odio a maximus egestas, tellus sem hendrerit tortor, et ultricies velit enim eu dolor. Proin vel neque porta, dapibus ex id, aliquet lectus. Duis pharetra sed lacus in pretium. 
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+          <h4 class="modal-title" id="myModalLabel">Richard Feynman - CEO</h4>
+        </div>
+        <div class="modal-body">
+          <img src="/images/execs/exec1.jpg" class="profile">
+          Morbi odio turpis, bibendum ac risus in, rhoncus porta dolor. Aenean quis iaculis enim, bibendum porta lorem. Aliquam consectetur ligula eu tincidunt rhoncus. Aliquam sodales volutpat arcu a finibus. Proin lobortis nibh vitae tortor tincidunt tristique. Nunc mattis diam sit amet suscipit elementum. Aliquam volutpat, odio a maximus egestas, tellus sem hendrerit tortor, et ultricies velit enim eu dolor. Proin vel neque porta, dapibus ex id, aliquet lectus. Duis pharetra sed lacus in pretium. 
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+          <h4 class="modal-title" id="myModalLabel">Subrahmanyan Chandrasekhar - CTO</h4>
+        </div>
+        <div class="modal-body">
+          <img src="/images/execs/exec2.jpg" class="profile">
+          Morbi odio turpis, bibendum ac risus in, rhoncus porta dolor. Aenean quis iaculis enim, bibendum porta lorem. Aliquam consectetur ligula eu tincidunt rhoncus. Aliquam sodales volutpat arcu a finibus. Proin lobortis nibh vitae tortor tincidunt tristique. Nunc mattis diam sit amet suscipit elementum. Aliquam volutpat, odio a maximus egestas, tellus sem hendrerit tortor, et ultricies velit enim eu dolor. Proin vel neque porta, dapibus ex id, aliquet lectus. Duis pharetra sed lacus in pretium. 
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+          <h4 class="modal-title" id="myModalLabel">Raven Corvid - CFO</h4>
+        </div>
+        <div class="modal-body">
+          <img src="/images/execs/exec3.jpg" class="profile">
+          Morbi odio turpis, bibendum ac risus in, rhoncus porta dolor. Aenean quis iaculis enim, bibendum porta lorem. Aliquam consectetur ligula eu tincidunt rhoncus. Aliquam sodales volutpat arcu a finibus. Proin lobortis nibh vitae tortor tincidunt tristique. Nunc mattis diam sit amet suscipit elementum. Aliquam volutpat, odio a maximus egestas, tellus sem hendrerit tortor, et ultricies velit enim eu dolor. Proin vel neque porta, dapibus ex id, aliquet lectus. Duis pharetra sed lacus in pretium. 
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+          <h4 class="modal-title" id="myModalLabel">Michio Kaku - CIO</h4>
+        </div>
+        <div class="modal-body">
+          <img src="/images/execs/exec4.jpg" class="profile">
+          Morbi odio turpis, bibendum ac risus in, rhoncus porta dolor. Aenean quis iaculis enim, bibendum porta lorem. Aliquam consectetur ligula eu tincidunt rhoncus. Aliquam sodales volutpat arcu a finibus. Proin lobortis nibh vitae tortor tincidunt tristique. Nunc mattis diam sit amet suscipit elementum. Aliquam volutpat, odio a maximus egestas, tellus sem hendrerit tortor, et ultricies velit enim eu dolor. Proin vel neque porta, dapibus ex id, aliquet lectus. Duis pharetra sed lacus in pretium. 
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modal5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+          <h4 class="modal-title" id="myModalLabel">Marie Currie - COO</h4>
+        </div>
+        <div class="modal-body">
+          <img src="/images/execs/exec5.jpg" class="profile">
+          Morbi odio turpis, bibendum ac risus in, rhoncus porta dolor. Aenean quis iaculis enim, bibendum porta lorem. Aliquam consectetur ligula eu tincidunt rhoncus. Aliquam sodales volutpat arcu a finibus. Proin lobortis nibh vitae tortor tincidunt tristique. Nunc mattis diam sit amet suscipit elementum. Aliquam volutpat, odio a maximus egestas, tellus sem hendrerit tortor, et ultricies velit enim eu dolor. Proin vel neque porta, dapibus ex id, aliquet lectus. Duis pharetra sed lacus in pretium. 
+          
+        </div>
+      </div>
+    </div>
+  </div>
+   
+  </br>
+
+    <footer>
+      <div class="footer">
+       <div class="container">
+          <p style="text-align:center;"> Copyrights. Pulp Fiction Inc, 2014.</p>
+       </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -21,11 +21,15 @@ router.get('/iot', function(req, res) {
   res.render('iot', { title: 'Pulp Fiction Inc.' });
 });
 
+//Get management Page
+router.get('/management', function(req, res) {
+  res.render('management', { title: 'Pulp Fiction Inc.' });
+});
+
 //Get location Page
 router.get('/location', function(req, res) {
   res.render('location', { title: 'Pulp Fiction Inc.' });
 });
-
 
 // Get Download page
 router.get('/download', function(req, res) {
