@@ -4,12 +4,14 @@
     <title><%= title %></title>
     <link rel='stylesheet' href='/stylesheets/bootstrap.min.css' />
     <link rel='stylesheet' href='/stylesheets/carousal.css' />
+     <link rel='stylesheet' href='/stylesheets/pages.css' />
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
   </head>
   <body>
   <header>
   <div class="navbar navbar-inverse">
+  
   <div class="navbar-header">
     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-inverse-collapse">
       <span class="icon-bar"></span>
@@ -18,13 +20,14 @@
     </button>
     <a class="navbar-brand" href="#">Pulp Fiction</a>
   </div>
+
   <div class="navbar-collapse collapse navbar-inverse-collapse">
     <form class="navbar-form navbar-left">
       <input class="form-control col-lg-8" placeholder="Search" type="text">
     </form>
     <ul class="nav navbar-nav navbar-right">
-    	<li><a href="#">Home</a></li>
-    	<li class="dropdown">
+      <li><a href="#">Home</a></li>
+      <li class="dropdown">
         <a aria-expanded="false" href="#" class="dropdown-toggle" data-toggle="dropdown">Products <b class="caret"></b></a>
         <ul class="dropdown-menu">
           <li><a href="/mobile">Mobile</a></li>
@@ -35,11 +38,11 @@
         <li class="dropdown">
         <a aria-expanded="false" href="#" class="dropdown-toggle" data-toggle="dropdown">About Us <b class="caret"></b></a>
         <ul class="dropdown-menu">
-          <li><a href="/management.html">Management</a></li>
-          <li><a href="/codeofconduct.html">Code of Conduct</a></li>
-          <li><a href="/businessprocess.html">Business Process</a></li>
-          <li><a href="/locations.html">Locations</a></li>
-          <li><a href="/contacts.html">Contacts</a></li>
+          <li><a href="/management">Management</a></li>
+          <li><a href="/codeofconduct">Code of Conduct</a></li>
+          <li><a href="/businessprocess">Business Process</a></li>
+          <li><a href="/location">Locations</a></li>
+          <li><a href="/contacts">Contacts</a></li>
         </ul>
       </li>
     </ul>
@@ -47,11 +50,28 @@
 </div>
 </header>
   
-  <h1> Internet of Things</h1>
+  </br>
+  <div class="container content1">
+    <div class="row">
+      <div class="col-lg-2 red">
+      </div>
+      <div class="col-lg-7">
+        <h2> Internet of Things</h2>
+        <p> The Internet of Things (IoT) is the interconnection of uniquely identifiable embedded computing devices within the existing Internet infrastructure. Typically, IoT is expected to offer advanced connectivity of devices, systems, and services that goes beyond machine-to-machine communications (M2M) and covers a variety of protocols, domains, and applications. The interconnection of these embedded devices (including smart objects), is expected to usher in automation in nearly all fields, while also enabling advanced applications like a Smart Grid. </p>
+      </div>
+      <div class="col-lg-3">
+        <div class="sidebar-block">
+          <div class="sidebar-testimonials">
+          <blockquote>I have been a long time blog follower and Pulp Fiction always brings out the best of all. -Reader</blockquote>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> 
+  
 
 
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+   
     <footer> Copyrights. Pulp Fiction Inc, 2014.</footer>
   </body>
 </html>

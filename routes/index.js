@@ -21,6 +21,12 @@ router.get('/iot', function(req, res) {
   res.render('iot', { title: 'Express' });
 });
 
+//Get location Page
+router.get('/location', function(req, res) {
+  res.render('location', { title: 'Express' });
+});
+
+
 // Get Download page
 router.get('/download', function(req, res) {
   res.render('download', { title: 'Express' });
