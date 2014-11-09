@@ -3,6 +3,7 @@
   <head>
     <title><%= title %></title>
     <link rel='stylesheet' href='/stylesheets/bootstrap.min.css' />
+    <link rel='stylesheet' href='/stylesheets/pages.css' />
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCLerFx5zE0vxqp59lA6TfUum0MdLiksJk">
@@ -58,9 +59,13 @@ margin:-400px 0 0 -400px;
   </div>
 </div>
 </header>
-    <h1><%= title %></h1>
-     <div id="map-canvas"></div>
-    <footer> Copyrights. Pulp Fiction Inc, 2014.</footer>
+  <footer>
+      <div class="footer">
+       <div class="container">
+          <p style="text-align:center;"> Copyrights. Pulp Fiction Inc, 2014.</p>
+       </div>
+      </div>
+    </footer>
 <script>
 (function() {
 window.onload = function() {
