@@ -2,19 +2,28 @@
 	text-align: center;
 }
 
-.content1 .red{
-	background-color: red;
-}
-
-.content1 .yellow{
-	background-color: yellow;
-}
-
 .sidebar-block{
 	padding: 15px;
 	background-color: #f5f5f5;
 	margin: 0 -15px 15px;
 	border-radius: 4px;
+}
+
+.block{
+	padding: 15px;
+	background-color: #f5f5f5;
+	margin: 0 -15px 15px;
+	border-radius: 4px;
+}
+
+.left1{
+	float:left;
+	margin-left: 150px;
+}
+
+.right-inline{
+	display:inline-block;
+	margin-left: 50px;
 }
 
 .sidebar-block .sidebar-testimonials{
@@ -24,7 +33,7 @@
 
 }
 
-.container .bigdata-video{
+.bigdata-video{
 	margin: 0 24%;
 }
 
@@ -36,5 +45,6 @@
   width: 100%;
   /* Set the fixed height of the footer here */
   height: 50px;
-  background-color: #f5f5f5;
+  background-color: #e5e5e5;
 }
+
