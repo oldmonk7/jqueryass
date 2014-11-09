@@ -60,7 +60,9 @@ body {
   height: 500px;
 }
 
-
+#myCarousel{
+  box-shadow: 0 13px 6px -6px #666;
+}
 
 /* MARKETING CONTENT
 -------------------------------------------------- */
@@ -69,6 +71,11 @@ body {
 .thumbnails .col-lg-4 {
   margin-bottom: 20px;
   text-align: center;
+
+}
+
+.thumbnails .col-lg-4 img{
+  border: 2px solid #999;
 }
 .thumbnails h2 {
   font-weight: normal;
