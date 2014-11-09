@@ -53,16 +53,31 @@
   </br>
   <div class="container content1">
     <div class="row">
-      <div class="col-lg-2 red">
+      <div class="col-lg-2">
+      <br/>
+      <br/>
+      <br/>
+      <div class="list-group">
+            <a href="#" class="list-group-item">Brochure</a>
+            <a href="#" class="list-group-item" data-toggle="modal" data-target="#myModal">White Paper</a>
+      </div>
       </div>
       <div class="col-lg-7">
         <h2> Internet of Things</h2>
         <p> The Internet of Things (IoT) is the interconnection of uniquely identifiable embedded computing devices within the existing Internet infrastructure. Typically, IoT is expected to offer advanced connectivity of devices, systems, and services that goes beyond machine-to-machine communications (M2M) and covers a variety of protocols, domains, and applications. The interconnection of these embedded devices (including smart objects), is expected to usher in automation in nearly all fields, while also enabling advanced applications like a Smart Grid. </p>
+        <p>
+        Things, in the IoT, can refer to a wide variety of devices such as heart monitoring implants, biochip transponders on farm animals, automobiles with built-in sensors, or field operation devices that assist fire-fighters in search and rescue.[3] Current market examples include smart thermostat systems and washer/dryers that utilize wifi for remote monitoring.
+        </p>
       </div>
       <div class="col-lg-3">
         <div class="sidebar-block">
           <div class="sidebar-testimonials">
-          <blockquote>I have been a long time blog follower and Pulp Fiction always brings out the best of all. -Reader</blockquote>
+          <blockquote>I have been a long time blog follower and Pulp Fiction always brings out the best of all.</br> <span style="float:right">-Reader</span></blockquote>
+          </div>
+          </div>
+          <div class="sidebar-block">
+          <div class="sidebar-testimonials">
+           <blockquote>I have been a long time blog follower and Pulp Fiction always brings out the best of all.</br> <span style="float:right">-Reader</span></blockquote>
           </div>
         </div>
       </div>
@@ -70,7 +85,36 @@
   </div> 
   
 
-
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+          <h4 class="modal-title" id="myModalLabel">Download White Paper</h4>
+        </div>
+        <div class="modal-body">
+            <form role="form">
+              <div class="form-group">
+            <label for="exampleInputEmail1">First Name</label>
+            <input type="name" class="form-control" id="fname" placeholder="">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Last Name</label>
+            <input type="email" class="form-control" id="lname" placeholder="">
+          </div>    
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="">
+          </div>
+        </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <a href="docs/iotpaper.pdf" download="IoT-White-Paper.pdf" id="downlaod" class="btn btn-primary">Download</a>
+        </div>
+      </div>
+    </div>
+  </div>
    
     <footer> Copyrights. Pulp Fiction Inc, 2014.</footer>
   </body>
