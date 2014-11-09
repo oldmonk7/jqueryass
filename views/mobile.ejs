@@ -8,12 +8,12 @@
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
   </head>
-  <body>
+ <body>
   <header>
   <div class="navbar navbar-inverse">
   <div class="container">
   <div class="navbar-header">
-    <a class="navbar-brand" href="#">Pulp Fiction</a>
+    <a class="navbar-brand" href="/">Pulp Fiction</a>
   </div>
 
   <div class="navbar-collapse collapse navbar-inverse-collapse">
@@ -21,7 +21,7 @@
       <input class="form-control col-lg-8" placeholder="Search" type="text">
     </form>
     <ul class="nav navbar-nav navbar-right">
-      <li><a href="#">Home</a></li>
+      <li><a href="/">Home</a></li>
       <li class="dropdown">
         <a aria-expanded="false" href="#" class="dropdown-toggle" data-toggle="dropdown">Products <b class="caret"></b></a>
         <ul class="dropdown-menu">
@@ -46,10 +46,72 @@
 </div>
 </header>
   
-    <h1> Mobile</h1></br>
-    
+  </br>
+  <div class="container content1">
+    <div class="row">
+      <div class="col-lg-2">
+      <br/>
+      <br/>
+      <br/>
+      <div class="list-group">
+            <a href="#" class="list-group-item">Brochure</a>
+            <a href="#" class="list-group-item" data-toggle="modal" data-target="#myModal">White Paper</a>
+      </div>
+      </div>
+      <div class="col-lg-7">
+        <h2> Mobile</h2>
+        <p> A smartphone (or smart phone) is a mobile phone with more advanced computing capability and connectivity than basic feature phones. Smartphones typically include the features of a phone with those of another popular consumer device, such as a personal digital assistant, a media player, a digital camera, and/or a GPS navigation unit. Later smartphones include all of those plus the features of a touchscreen computer, including web browsing, Wi-Fi, 3rd-party apps, motion sensor, mobile payment and 3G.
+        </p>
+        <p>
+        In the third quarter of 2012, one billion smartphones were in use worldwide. Global smartphone sales surpassed the sales figures for features phones in early 2013. As of 2013, 65 percent U.S. mobile consumers own smartphones. The European mobile device market as of 2013 is 860 million. In China, smartphones represented more than half of all handset shipments in the second quarter of 2012
+        </p>
+      </div>
+      <div class="col-lg-3">
+        <div class="sidebar-block">
+          <div class="sidebar-testimonials">
+          <blockquote>I have been a long time blog follower and Pulp Fiction always brings out the best of all.</br> <span style="float:right">-Reader</span></blockquote>
+          </div>
+          </div>
+          <div class="sidebar-block">
+          <div class="sidebar-testimonials">
+           <blockquote>I have been a long time blog follower and Pulp Fiction always brings out the best of all.</br> <span style="float:right">-Reader</span></blockquote>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> 
+  
 
-
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+          <h4 class="modal-title" id="myModalLabel">Download White Paper</h4>
+        </div>
+        <div class="modal-body">
+            <form role="form">
+              <div class="form-group">
+            <label for="exampleInputEmail1">First Name</label>
+            <input type="name" class="form-control" id="fname" placeholder="">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Last Name</label>
+            <input type="email" class="form-control" id="lname" placeholder="">
+          </div>    
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="">
+          </div>
+        </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <a href="docs/iotpaper.pdf" download="IoT-White-Paper.pdf" id="downlaod" class="btn btn-primary">Download</a>
+        </div>
+      </div>
+    </div>
+  </div>
    
     <footer>
       <div class="footer">
